@@ -64,8 +64,12 @@ dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
-def printInfo():
-    print(cmp('locations','instructors'))
+def printInfo(dojo):
+    for key,val in dojo.items():
+        print(len(val),key)
+        for i in range(0, len(val)):
+            print(val[i])
+        
 
 printInfo(dojo)
 
