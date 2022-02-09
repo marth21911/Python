@@ -65,7 +65,10 @@ dojo = {
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 def printInfo():
-    for value in dojo:
-        print(value)
+    print(cmp('locations','instructors'))
 
 printInfo(dojo)
+
+
+
+
