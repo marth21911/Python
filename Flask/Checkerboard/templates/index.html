@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+{{x}}
+{{y}}
+    {% for i in range(y):%}
+
+        <div class="row">
+ 
+        {% for j in range (x) :%}
+            {% if (j+i) % 2 == 0 %}
+            <div class="white"></div>
+            {%else%}
+            <div class="black"></div>
+            {% endif %}
+            
+        {% endfor %}
+
+
+    </div>
+    {% endfor %}
+
+</body>
+</html>
