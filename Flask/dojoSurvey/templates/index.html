@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <h1>Hold on to your butts</h1>
+
+    <h1>Dojo Survey</h1>
+    <div class="box">
+        <form class="form-horizontal" action='/results' method='post'>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for='name'>Name:</label>
+                    <div class="col-sm-10">
+                        <input type='text' name='name'>
+                    </div>
+                <label class="control-label col-sm-2" for='location'>Location:</label>
+                    <div class="col-sm-10">
+                    <input type='text' name='location'>
+                    </div>
+                <label  class="control-label col-sm-2"for="language">Favorite Language</label>
+                    <div class="col-sm-10">
+                        <input type="radio" id="python" name="language" value="python">
+                        <label for="python">Python</label><br>
+                        <input type="radio" id="klingonn" name="language" value="klingonn">
+                        <label for="klingonn">Klingonn</label><br>
+                        <input type="radio" id="squanch" name="language" value="squanch">
+                        <label for="squanch">Squanch</label>
+                    </div>
+                    <label class="control-label col-sm-2" for="comments">Comments</label>
+                    <div class="col-sm-10">
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    </div>
+                    <div class="col-sm-10">
+                        <input type='submit' value='submit'>
+                    </div>
+                </div>
+            </form>
+    </div>
+
+
+    
+    
+</body>
+</html>
